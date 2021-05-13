@@ -1,13 +1,6 @@
 {
     const tasks = [
-        {
-            content: "nagrać lekcję",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
+       
     ];
 
 
@@ -22,12 +15,12 @@
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
-    } 
+    }; 
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -55,7 +48,7 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li
+            <li>
             ${task.done ? " style=\"text-decoration: line-through\"" : ""}
             >
             <button class="js-done">zrobione?</button>
