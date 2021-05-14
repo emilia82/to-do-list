@@ -3,3 +3,8 @@
     width: 100%;
     max-width: 1000px;
 }
+
+.header {
+    margin: 40px auto 5px;
+    width: 85%;
+}
