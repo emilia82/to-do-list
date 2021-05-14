@@ -1,0 +1,28 @@
+.form {
+    margin: 0, auto;
+    font-size: 15px;
+    display: flex;
+}
+
+@media(max-width: 767px) {
+    .form {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.form__input {
+    padding: 10px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    flex-grow: 4;
+}
+
+@media(max-width: 767px) {
+    .form__input {
+        margin: 0 0 10px;
+    }
+}
+
