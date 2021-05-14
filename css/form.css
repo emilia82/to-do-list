@@ -26,3 +26,16 @@
     }
 }
 
+.form__button {
+    padding: 10px;
+    color: #fff;
+    background-color: teal;
+    border: none;
+   
+}
+.form__button:hover {
+    cursor: pointer;
+}
+.form__button:active {
+    outline: 3px solid #000000;
+}
