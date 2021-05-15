@@ -18,3 +18,37 @@
     margin: 0 auto 10px;
 }
 
+.taskList__item {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    padding: 15px;
+}
+
+.taskList__span {
+    font-size: 25px;
+    padding: 5px;
+    color: #333;
+    word-break: break-all;
+}
+
+.taskList__span--done {
+    text-decoration: line-through;
+}
+
+.taskList__button {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskList__buttonSpan {
+    opacity: 0;
+}
+
+.taskList__buttonSpan--done {
+    opacity: 1;
+}
