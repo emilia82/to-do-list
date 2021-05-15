@@ -13,7 +13,8 @@
 }
 
 .section__taskList {
-    list-style-type: disc;
+    list-style-type: none;
     padding: 30px 10px 10px;
     margin: 0 auto 10px;
 }
+
