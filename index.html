@@ -26,21 +26,22 @@
         <script defer src="js/script.js"></script>
     </head>
     <body>
-        <div class="container">
-            <header class="header">
-                <h1 class="header__title">Lista Zadań</h1>
+        <main class="container">
+            <header>
+                <h1>Lista Zadań</h1>
             </header>
             <section class="section">
                 <h2 class="section__header">Dodaj nowe zadanie</h2>
+                <div class="section__body">
             <form class="form js-form">
                 <input class="form__input js-newTask" placeholder="Co jest do zrobienia">
                 <button class="form__button js-addTaskButton">Dodaj zadanie</button>
-            </form>
+            </form></div>
             </section>
             <section class="section">
                 <h2 class="section__header">Lista zadań</h2>
                 <ul class="section__taskList js-tasks"></ul>
             </section>
-        </div>
+        </main>
     </body>
     </html>
