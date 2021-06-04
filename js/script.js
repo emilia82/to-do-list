@@ -20,12 +20,12 @@
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         
-        removeButtons.forEach((removeButton, index) => {
+        removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
-                removeTask(index);
+                removeTask(taskIndex);
             });
         });
-   
+    };
 
     const bindToggleDoneEvents = () => {
     const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
@@ -88,4 +88,4 @@
     };
 
     init();
-}}
+}
