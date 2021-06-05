@@ -10,11 +10,18 @@
 ## Description: Simple to-do list application 
 ## How to use it? 
 1. Type down your task contend in first section "Dodaj zadanie" 
-![]
+![addNewTask](https://github.com/emilia82/to-do-list/blob/main/images/addNewTask.gif?raw=true)
 2. Click on "Dodaj zadanie" button, 
 - the task will show in second section "Lista zadań" with 2 icons: green and red 
-3. If your task is done, you can click in green icon, and it's content will line-through 
-4. If you want to delete your task - click in red icon
-5. You can click "Ukończ wszystkie" button - all content tasks will line-through 
+![clickButton](https://github.com/emilia82/to-do-list/blob/main/images/clickButton.gif?raw=true)
+3. If your task is done, you can click in green icon, and it's content will be line-through 
+![greenButton](https://github.com/emilia82/to-do-list/blob/main/images/greenButton.gif?raw=true)
+4. You can click "Ukończ wszystkie" button - all content tasks will line-through 
+
 6. You can hide all done tasks with "Ukryj ukończone" button
-- if you do that, the list of tasks will be hiden, and the button "Pokaż ukończone" will show up
+- if you do that, the list of tasks will be hiden, 
+![hideDone](https://github.com/emilia82/to-do-list/blob/main/images/hideDone.gif?raw=true)
+7. Don't worry - You can show it again, by clicking the button "Pokaż ukończone" 
+![showDone](https://github.com/emilia82/to-do-list/blob/main/images/showDone.gif?raw=true)
+8. You can delete task by clicking the red button
+![redButton](https://github.com/emilia82/to-do-list/blob/main/images/redButton.gif?raw=true)
