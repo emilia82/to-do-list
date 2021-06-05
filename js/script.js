@@ -14,21 +14,21 @@
         tasks = [
             ...tasks.slice(0, taskIndex),
             {
-            ...tasks[taskIndex], done: !tasks[taskIndex].done,
+                ...tasks[taskIndex], done: !tasks[taskIndex].done,
             },
-            ...tasks.slice(taskIndex +1),
+            ...tasks.slice(taskIndex + 1),
         ];
-       
+
         render();
     };
 
     const addNewTask = (newTaskContent) => {
-        tasks = [...tasks, { content: newTaskContent }];
+        tasks = [...tasks, { content: newTaskContent, }];
         render();
     };
 
     const markAllTasksDone = () => {
-        tasks = tasks.map((task) => ({
+        task = tasks.map((task) => ({
             ...task,
             done: true,
         }));
@@ -42,9 +42,9 @@
     };
 
 
-    const bindRemoveEvents = () => {
+    const bindRemoveEvents = () => {    //dodajeEventListenery do przycisków usuwających zadanie
         const removeButtons = document.querySelectorAll(".js-remove");
-        
+
         removeButtons.forEach((removeButton, taskIndex) => {
             removeButton.addEventListener("click", () => {
                 removeTask(taskIndex);
@@ -52,11 +52,13 @@
         });
     };
 
+
+
     const bindToggleDoneEvents = () => {
-    const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
-        
-    toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
-        toggleDoneButton.addEventListener("click", () => {
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
+
+        toggleDoneButtons.forEach((toggleDoneButton, taskIndex) => {
+            toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
             });
         });
@@ -84,6 +86,7 @@
         tasksElement.innerHTML = tasks.map(taskToHTML).join("");
     };
 
+
     const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttons");
 
@@ -104,7 +107,8 @@
         </button>
         `;
     };
-       
+
+
     const bindButtonsEvents = () => {
         const markAllDoneButton = document.querySelector(".js-markAllDone");
 
@@ -119,6 +123,7 @@
         }
     };
 
+
     const render = () => {
         renderTasks();
         bindRemoveEvents();
@@ -128,10 +133,9 @@
         bindButtonsEvents();
     };
 
-
     const onFormSubmit = (event) => {
         event.preventDefault();
-    
+
         const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = newTaskElement.value.trim();
 
@@ -140,15 +144,13 @@
             newTaskElement.value = "";
         }
 
-       newTaskElement.focus();
+        newTaskElement.focus();
     };
-   
 
     const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
 
