@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Prosta aplikacja To-do list">
-        <title>Lista zadań</title>
+        <title>ToDo-List</title>
         <meta property="og:image" content="images/graph-to-do.jpg">
         <link rel="icon" href="images/icon-to-do.png">
         <link
@@ -19,6 +19,7 @@
         <link href="css/form.css" rel="stylesheet">
         <link href="css/section.css" rel="stylesheet">
         <link href="css/tasks.css" rel="stylesheet">
+        <link href="css/buttons.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -34,13 +35,18 @@
                 <h2 class="section__header">Dodaj nowe zadanie</h2>
                 <div class="section__body">
                     <form class="form js-form">
-                        <input class="form__input js-newTask" placeholder="Co jest do zrobienia">
+                        <input class="form__input js-newTask" placeholder="Co jest do zrobienia?">
                         <button class="form__button">Dodaj zadanie</button>
                     </form>
                 </div>
             </section>
             <section class="section">
-                <h2 class="section__header">Lista zadań</h2>
+                <header class="section__header">
+                <h2 class="section__title">Lista zadań</h2>
+                <div class="buttons js-buttons">
+                    
+                </div>
+            </header>
                 <div class="section__body">
                     <ul class="tasks js-tasks"></ul>
                 </div>
