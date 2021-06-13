@@ -16,8 +16,9 @@
 ![clickButton](https://github.com/emilia82/to-do-list/blob/main/images/clickButton.gif?raw=true)
 3. If your task is done, you can click in green icon, and it's content will be line-through 
 ![greenButton](https://github.com/emilia82/to-do-list/blob/main/images/greenButton.gif?raw=true)
-4. You can click "Ukończ wszystkie" button - all content tasks will line-through 
-
+4. You can click "Ukończ wszystkie" button 
+- if you do that, all content tasks will be line-through 
+![allTasksDone](https://github.com/emilia82/to-do-list/blob/main/images/allTasksDone.gif?raw=true)
 6. You can hide all done tasks with "Ukryj ukończone" button
 - if you do that, the list of tasks will be hiden, 
 ![hideDone](https://github.com/emilia82/to-do-list/blob/main/images/hideDone.gif?raw=true)
